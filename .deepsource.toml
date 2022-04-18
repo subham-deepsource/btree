@@ -6,7 +6,6 @@ enabled = true
 
   [analyzers.meta]
   import_paths = ["github.com/subham-deepsource/btree"]
-  mod = "readonly"
 
 [[transformers]]
 name = "gofmt"
