@@ -8,5 +8,5 @@ enabled = true
   import_paths = ["github.com/subham-deepsource/btree"]
 
 [[transformers]]
-name = "gofmt"
+name = "gofumpt"
 enabled = true
