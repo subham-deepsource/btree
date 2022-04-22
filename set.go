@@ -11,7 +11,7 @@ func (tr *Set[K]) Insert(key K) {
 
 func (tr *Set[K]) Scan(iter func(key K) bool) {
 	tr.base.Scan(func(key K, value struct{}) bool {
-			   return iter(key)
+		return iter(key)
 	})
 }
 
