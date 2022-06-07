@@ -1164,7 +1164,6 @@ func TestMapIter(t *testing.T) {
 		}
 		i++
 	}
-
 }
 
 func TestMapIterSeek(t *testing.T) {
