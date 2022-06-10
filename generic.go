@@ -457,7 +457,6 @@ func (tr *Generic[T]) delete(cn **node[T], max bool, key T,
 		tr.nodeRebalance(n, i)
 	}
 	return prev, true
-
 }
 
 // nodeRebalance rebalances the child nodes following a delete operation.
