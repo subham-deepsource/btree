@@ -11,7 +11,7 @@ func (tr *Set[K]) Insert(key K) {
 
 func (tr *Set[K]) Scan(iter func(key K) bool) {
 	tr.base.Scan(func(key K, value struct{}) bool {
-			   return iter(key)
+		return iter(key)
 	})
 }
 
@@ -79,7 +79,6 @@ func (tr *Set[K]) Max() (K, bool) {
 func (tr *Set[K]) PopMin() (K, bool) {
 	key, _, ok := tr.base.PopMin()
 	return key, ok
-
 }
 
 // PopMax removes the minimum item in tree and returns it.
@@ -87,7 +86,6 @@ func (tr *Set[K]) PopMin() (K, bool) {
 func (tr *Set[K]) PopMax() (K, bool) {
 	key, _, ok := tr.base.PopMax()
 	return key, ok
-
 }
 
 // GetAt returns the value at index.
