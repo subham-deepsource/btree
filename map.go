@@ -282,7 +282,6 @@ func (tr *Map[K, V]) delete(n *mapNode[K, V], max bool, key K) (mapPair[K, V], b
 		tr.nodeRebalance(n, i)
 	}
 	return prev, true
-
 }
 
 // nodeRebalance rebalances the child nodes following a delete operation.

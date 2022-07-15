@@ -1300,7 +1300,6 @@ func TestGenericIter(t *testing.T) {
 		i++
 	}
 	iter.Release()
-
 }
 
 func TestGenericIterSeek(t *testing.T) {
